@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "./Card";
 import "./CardBody.css";
-const CardBody = ({ products, addItem, removeItem, addedItems }) => {
-  products.map((product) => (product.isAdded = true));
+
+const CardBody = ({ products, addItem, removeItem, addedItems, descuentoActivo }) => {
   return (
     <div className="card__body">
       {products.map((product) => (
@@ -12,6 +12,7 @@ const CardBody = ({ products, addItem, removeItem, addedItems }) => {
           addItem={addItem}
           removeItem={removeItem}
           addedItems={addedItems}
+          descuento={descuentoActivo} // Pasar el estado de descuento
         />
       ))}
     </div>

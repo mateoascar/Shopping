@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
+    "react_exercise": "file:",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
