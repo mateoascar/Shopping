@@ -49,6 +49,7 @@ const AddProducts = ({ items, click, removeItem, setAddedItem }) => {
                 </tr>
               </tfoot>
             </table>
+
           </div>
         </div>
       </div>
@@ -56,7 +57,7 @@ const AddProducts = ({ items, click, removeItem, setAddedItem }) => {
         <div className="right-side-header">
           <h1>
             Shopping <span className="total-items">{items.length}</span>
-            {items.length <= 1 ? " item" : " items"}
+            {items.length == 1 ? " item" : " items"}
           </h1>
           <button
             className="remove-item-btn"

@@ -29,6 +29,12 @@
   background-color: var(--color-white);
   z-index: 2;
 }
+._footer_{
+  background-color: var(--color-white);
+  position: sticky;
+
+}
+
 .nav-right {
   display: flex;
   align-items: center;
@@ -39,20 +45,29 @@
     width: 95%;
   }
   .nav {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-right{
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .body__container {
     width: 100%;
   }
-  .nav-right {
+  .nav{
     flex-direction: column;
   }
 }
 @media print {
   .nav {
+    display: none;
+  }
+
+  ._footer_{
     display: none;
   }
 }

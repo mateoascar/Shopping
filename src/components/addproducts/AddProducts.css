@@ -8,6 +8,7 @@
   display: flex;
   z-index: 2;
   animation: showhide 0.2s;
+  padding-bottom: 1rem;
 }
 .animate {
   animation: hideshow 0.2s;
